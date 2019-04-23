@@ -58,7 +58,7 @@ def lambda_handler(context,event):
     if len(mfaNotEnabledymasdeX) > 0:
         physicalStringmasd30 = 'Han pasado más de ' + str(maxnomfa) + ' días y los siguientes usuarios tienen MFA deshabilitado: \n\n' + '\n'.join(mfaNotEnabledymasdeX)
         response = sns.publish(
-        TopicArn='<<TU ARN TÓPICO SNS AQUÍ>>',
+        TopicArn='<<TU ARN TOPIC SNS AQUÍ>>',
         Message= physicalStringmasd30,
         Subject='Usuarios con más de ' + str(maxnomfa) + ' días sin MFA',
         )
@@ -67,7 +67,7 @@ def lambda_handler(context,event):
     #print physicalStringmasd30
 
     response = sns.publish(
-        TopicArn='<<TU ARN TÓPICO SNS AQUÍ>>',
+        TopicArn='<<TU ARN TOPIC SNS AQUÍ>>',
         Message= physicalString,
         Subject='Total de usuarios sin MFA',
     )
