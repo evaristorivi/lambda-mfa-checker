@@ -1,5 +1,6 @@
 # Lambda MFA Checker
 
-This project consists of an AWS Lambda function that will check whether each IAM user has an MFA device (virtual and/or physical) setup.
+Este proyecto consta de una función AWS Lambda que verificará si cada usuario de IAM tiene una configuración de dispositivo (virtual y / o física) de MFA, calculando además el número de días de antiguedad de cada usuario.
 
-For a more detailed walkthrough of this project, see the blog post.
+Fork de https://github.com/1Strategy/lambda-mfa-checker/blob/master/lambda_function.py
+
